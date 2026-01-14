@@ -1,15 +1,3 @@
----
-title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
-chapter: false
-pre: " <b> 1.2. </b> "
----
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 2:
 
 * Kết nối, làm quen với các thành viên trong First Cloud Journey.
@@ -18,8 +6,8 @@ pre: " <b> 1.2. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Liệt kê idea <br> - Trình bày idea <br> - Vote idea                                                                                             | 12/01/2026   | 12/01/2026      | https://docs.google.com/spreadsheets/d/1WJR0zmXseWhfJo8_mTW4GjgINczgDh7O5YfOSZGnum4/edit?usp=sharing
+| 3   | - Tìm hiểu Cloud Computing và AWS cơ bản <br>&emsp; + Khái niệm điện toán đám mây <br>&emsp; + AWS là gì và các dịch vụ cơ bản <br> - AWS Global Infrastructure và IAM <br>&emsp; + Regions, Availability Zones, Edge Locations <br>&emsp; + IAM: Users, Groups, Roles & Policies <br> - Thực hành thiết lập kiến trúc AWS cơ bản <br>&emsp; + Tạo VPC và Subnet <br>&emsp; + Cấu hình Security Group <br>&emsp; + Khởi tạo EC2 Instance <br>&emsp; + Thiết lập RDS Database | 13/01/2026   | 13/01/2026      | - AWS Noodles Channel <br> - <https://cloudjourney.awsstudygroup.com/> |
 | 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 | 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
