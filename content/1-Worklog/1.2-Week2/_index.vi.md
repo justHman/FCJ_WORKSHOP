@@ -1,47 +1,40 @@
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hiểu các khái niệm cơ bản về Cloud Computing và AWS.
+* Làm quen với các dịch vụ lưu trữ và tính toán trên AWS như EC2, S3, RDS.
+* Nắm được cách thiết kế hệ thống High Availability với Auto Scaling và Load Balancing.
+* Tìm hiểu các thuật toán cơ bản trong xử lý ngôn ngữ tự nhiên (NLP) như Logistic Regression, Naive Bayes, Hidden Markov Models.
+* Hiểu cách biểu diễn từ ngữ dưới dạng vector và ứng dụng các mô hình xác suất trong NLP.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | 2   | - Liệt kê idea <br> - Trình bày idea <br> - Vote idea                                                                                             | 12/01/2026   | 12/01/2026      | https://docs.google.com/spreadsheets/d/1WJR0zmXseWhfJo8_mTW4GjgINczgDh7O5YfOSZGnum4/edit?usp=sharing
 | 3   | - Tìm hiểu Cloud Computing và AWS cơ bản <br>&emsp; + Khái niệm điện toán đám mây <br>&emsp; + AWS là gì và các dịch vụ cơ bản <br> - AWS Global Infrastructure và IAM <br>&emsp; + Regions, Availability Zones, Edge Locations <br>&emsp; + IAM: Users, Groups, Roles & Policies <br> - Thực hành thiết lập kiến trúc AWS cơ bản <br>&emsp; + Tạo VPC và Subnet <br>&emsp; + Cấu hình Security Group <br>&emsp; + Khởi tạo EC2 Instance <br>&emsp; + Thiết lập RDS Database | 13/01/2026   | 13/01/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tìm hiểu dịch vụ lưu trữ AWS: <br>&emsp; + S3 (Simple Storage Service): lưu trữ đối tượng cho file, ảnh, backup <br>&emsp; + EBS (Elastic Block Store): ổ đĩa block gắn với EC2 <br>&emsp; + EFS (Elastic File System): hệ thống file chia sẻ <br> - Hiểu sự khác biệt giữa S3 vs EBS vs EFS: <br>&emsp; + S3: object storage - dễ scale, rẻ, dùng cho dữ liệu tĩnh <br>&emsp; + EBS: block storage - tốc độ cao, gắn EC2 <br>&emsp; + EFS: file storage - chia sẻ nhiều máy | 16/01/2026   | 16/01/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Tìm hiểu dịch vụ lưu trữ AWS: <br>&emsp; + S3 (Simple Storage Service): lưu trữ đối tượng cho file, ảnh, backup <br>&emsp; + EBS (Elastic Block Store): ổ đĩa block gắn với EC2 <br>&emsp; + EFS (Elastic File System): hệ thống file chia sẻ <br> - Hiểu sự khác biệt giữa S3 vs EBS vs EFS: <br>&emsp; + S3: object storage - dễ scale, rẻ, dùng cho dữ liệu tĩnh <br>&emsp; + EBS: block storage - tốc độ cao, gắn EC2 <br>&emsp; + EFS: file storage - chia sẻ nhiều máy | 14/01/2026   | 14/01/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Tổng quan về AWS Compute Services: <br>&emsp; + AWS cung cấp dịch vụ "On-demand" thay vì mua máy chủ vật lý. <br>&emsp; + Các loại hình chính: Instances (EC2), Serverless (Lambda), Containers (ECS, EKS). <br> - Amazon EC2: <br>&emsp; + Máy ảo tùy chỉnh CPU, RAM, ổ cứng. <br>&emsp; + AMI: Đóng gói hệ điều hành và phần mềm. <br>&emsp; + Key Pair: Bảo mật truy cập bằng khóa. <br>&emsp; + Instance Types: Phân loại theo mục đích sử dụng. <br> - Container Services: <br>&emsp; + ECS & EKS giúp quản lý cluster container. <br> - Serverless Computing: <br>&emsp; + Lambda chạy code theo sự kiện, tiết kiệm chi phí. <br> - Tổng quan về Database trên AWS: <br>&emsp; + Database trên Cloud giảm độ trễ so với on-premise. <br>&emsp; + Các loại chính: Relational (MySQL, PostgreSQL) và NoSQL (DynamoDB, MongoDB). <br> - AWS RDS: <br>&emsp; + Dịch vụ database quan hệ được quản lý hoàn toàn. <br>&emsp; + Hỗ trợ nhiều engine: MySQL, PostgreSQL, Aurora... <br> - AWS DynamoDB: <br>&emsp; + Dịch vụ NoSQL dạng Key-Value, serverless, tự động scale. <br> - Các dịch vụ khác: <br>&emsp; + DMS: Di chuyển dữ liệu giữa các database. <br>&emsp; + ElastiCache: Bộ nhớ đệm in-memory (Redis, Memcached). <br> - Thiết kế hệ thống High Availability: <br>&emsp; + Sử dụng Auto Scaling Group để tự động thêm/bớt server. <br>&emsp; + Elastic Load Balancer (ELB) phân phối tải đều giữa các server. <br> - Auto Scaling: <br>&emsp; + Tự động thêm/bớt EC2 instances dựa trên nhu cầu. <br>&emsp; + Dựa trên CloudWatch để giám sát và kích hoạt scale. <br> - Load Balancing: <br>&emsp; + ELB phân phối lưu lượng truy cập đến nhiều server. <br>&emsp; + Hỗ trợ Application Load Balancer (ALB) và Network Load Balancer (NLB). | 15/01/2026   | 15/01/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Khóa học "Natural Language Processing with Classification and Vector Spaces": <br>&emsp; + Tập trung vào các thuật toán cơ bản như Logistic Regression, Naive Bayes và biểu diễn từ dưới dạng vector. <br> - Nội dung chính: <br>&emsp; + Phân tích cảm xúc với Logistic Regression. <br>&emsp; + Phân tích cảm xúc với Naive Bayes. <br>&emsp; + Không gian Vector và Word Embeddings. <br>&emsp; + Dịch máy và Tìm kiếm văn bản. <br> - Kỹ năng đạt được: <br>&emsp; + Xây dựng hệ thống phân tích cảm xúc. <br>&emsp; + Hiểu cách biểu diễn từ ngữ dưới dạng vector. <br>&emsp; + Áp dụng các thuật toán cơ bản vào bài toán NLP. <br> - Khóa học "Natural Language Processing with Probabilistic Models": <br>&emsp; + Tập trung vào các mô hình xác suất như Hidden Markov Models, N-grams và Word Embeddings với Neural Networks. <br> - Nội dung chính: <br>&emsp; + Tự động sửa lỗi chính tả với Edit Distance và Xác suất Bayes. <br>&emsp; + Gán nhãn từ loại với Hidden Markov Models và thuật toán Viterbi. <br>&emsp; + Tự động hoàn thành câu với N-grams và Perplexity. <br>&emsp; + Word Embeddings nâng cao với Continuous Bag of Words (CBOW). <br> - Kỹ năng đạt được: <br>&emsp; + Xây dựng hệ thống tự động sửa lỗi và gợi ý từ. <br>&emsp; + Hiểu sâu về các mô hình xác suất và mạng nơ-ron cơ bản. | 16/01/2026   | 16/01/2026      | <https://www.coursera.org/> |
 
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu rõ các dịch vụ cơ bản của AWS:
+  * Compute: EC2, Lambda, Auto Scaling.
+  * Storage: S3, EBS, EFS.
+  * Database: RDS, DynamoDB.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thực hành thành công:
+  * Tạo và cấu hình EC2 instance.
+  * Kết nối SSH và gắn EBS volume.
+  * Thiết kế hệ thống High Availability với Auto Scaling Group và Elastic Load Balancer.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Hoàn thành khóa học "Natural Language Processing with Classification and Vector Spaces":
+  * Xây dựng hệ thống phân tích cảm xúc với Logistic Regression và Naive Bayes.
+  * Hiểu cách biểu diễn từ ngữ dưới dạng vector (Word Embeddings).
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Hoàn thành khóa học "Natural Language Processing with Probabilistic Models":
+  * Xây dựng hệ thống tự động sửa lỗi chính tả với Edit Distance và Xác suất Bayes.
+  * Gán nhãn từ loại với Hidden Markov Models và thuật toán Viterbi.
+  * Tự động hoàn thành câu với N-grams và Perplexity.
 
 
